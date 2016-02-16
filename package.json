@@ -1,0 +1,25 @@
+{
+  "name": "apollo-css-challenge",
+  "version": "0.1.0",
+  "description": "CSS challenge to be considered for the Apollo UI project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmbaughman/apollo-css-challenge.git"
+  },
+  "keywords": [
+    "CSS",
+    "SCSS",
+    "Gulp",
+    "PostCSS"
+  ],
+  "author": "David Baughman <dbaughman@us.imshealth.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmbaughman/apollo-css-challenge/issues"
+  },
+  "homepage": "https://github.com/dmbaughman/apollo-css-challenge#readme"
+}
