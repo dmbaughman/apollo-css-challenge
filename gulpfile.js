@@ -14,9 +14,9 @@ gulp.task( 'serve', [ 'default' ], function() {
 });
 
 gulp.task( 'styles', function() {
-  gulp.src( 'scss/main.scss' )
+  gulp.src( 'scss/apollo.scss' )
     .pipe( sass({
-        includePaths: [ 'node_modules' ],
+        includePaths: [ 'node_modules', 'bower_components' ],
         outputStyle: 'expanded'  // expanded for development
       })
       .on( 'error', sass.logError ))
@@ -25,7 +25,7 @@ gulp.task( 'styles', function() {
         browsers: [ 'last 2 versions' ]
       })
     ]))
-    .pipe( gulp.dest( 'dist/css/' ) )
+    .pipe( gulp.dest( 'css' ) )
     .pipe( browserSync.stream() );
 });
 
