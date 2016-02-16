@@ -1,5 +1,13 @@
+// Core variables and mixins
+@import 'bootstrap/scss/variables';
 @import 'variables';
+@import 'bootstrap/scss/mixins';
 
-/*
-  Your styles or imports go here
-*/
+// Core CSS
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/grid";
+
+///
+/// Your imports go here
+///
