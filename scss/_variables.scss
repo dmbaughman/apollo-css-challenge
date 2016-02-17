@@ -21,4 +21,9 @@ $shadow-color: rgba(0, 0, 0, .2);
 $shadow-hover: .3125rem .3125rem 1rem $shadow-color;
 $shadow-active: .1875rem .1875rem .5rem $shadow-color;
 
+///
+/// Bootstrap variable overrides
+///
+
+// Enable flexbox grid
 $enable-flex: true;
