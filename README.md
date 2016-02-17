@@ -28,15 +28,11 @@ Treat this as a work project and use Git the way you would at work.  We are usin
 - Ignore the annoying reverb animation thing
 - The four elements per row do not correspond to the four states, so when loading the page the first group should all look blue (default primary) and the second group should all be white with a gray border (default secondary)
 
-## Bonus (optional)
-
-Add styles to account for the touchscreen and long label styles.  We'd prefer not to use additional classes for these two, so how would you approach this problem?
-
 ## Resources
+
 - A basic gulpfile is included with SCSS compilation and livereload for when stylesheets are updated.
 - Bootstrap v4.0.0-alpha.2 is included as a resource.  Check out the imports in `apollo.scss` to see what's included.
 
-## Some helpful details
+## Bonus (optional)
 
--
-
+Add styles to account for the touchscreen and long label styles.  We'd prefer not to use additional classes for these two, so how would you approach this problem?
