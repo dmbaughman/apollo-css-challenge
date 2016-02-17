@@ -6,7 +6,7 @@ var browserSync = require( 'browser-sync' );
 
 gulp.task( 'serve', [ 'default' ], function() {
   browserSync.init({
-    server: './',
+    server: '.',
     ghostMode: false
   });
 
