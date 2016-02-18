@@ -16,9 +16,11 @@ $green: rgb(32, 194, 47);
 $coral: rgb(251, 79, 57);
 $orange: rgb(255, 148, 12);
 
-// Shadows
+// Shadows        I normally always try and follow already implemented conventions but this is in fact a test
+// so i did switch to em's just for ios safari browser compatabillity bugs.
+
 $shadow-color: rgba(0, 0, 0, .2);
-$shadow-hover: .3125rem .3125rem 1rem $shadow-color;
+$shadow-hover: .3125em .3125em 1em $shadow-color;
 $shadow-active: .1875rem .1875rem .5rem $shadow-color;
 
 ///

@@ -1635,3 +1635,96 @@ mark,
             align-self: flex-end;
   }
 }
+
+.btn {
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  padding: .5625em 2.25em .4375em;
+  border: .125em solid transparent;
+  margin: 0 auto;
+  outline-color: transparent;
+  /* ...alas for real browsers */
+  transition: .5s;
+  /* all primary state buttons*/
+  /* all secondary state buttons*/
+  /* all primary state buttons*/
+}
+
+.btn.primary {
+  color: white;
+  background-color: #297dfd;
+}
+
+.btn.primary:disabled {
+  background-color: #c7defe;
+  color: #20a6ec;
+}
+
+.btn.primary:hover {
+  text-decoration: none;
+  box-shadow: 0.3125em 0.3125em 1em rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.btn.primary:active {
+  background-color: #1c2980;
+  box-shadow: 0.1875rem 0.1875rem 0.5rem rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.btn.primary.compact {
+  font-size: .75em;
+  padding: .375em .8125em .375em;
+}
+
+.btn.primary.touch-screen {
+  padding: 1.125em 2.25em;
+}
+
+.btn.primary.long-label {
+  padding: .3125em 1.125em;
+}
+
+.btn.secondary {
+  background-color: #FFFFFF;
+  border-color: #ced3d6;
+  color: #000;
+}
+
+.btn.secondary:disabled {
+  background-color: #FFFFFF;
+  color: #e3ebef;
+}
+
+.btn.secondary:hover {
+  box-shadow: 0.3125em 0.3125em 1em rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-color: #FFFFFF;
+}
+
+.btn.secondary:active {
+  background-color: #394f5a;
+  box-shadow: 0.1875rem 0.1875rem 0.5rem rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  border-color: #394f5a;
+}
+
+.btn.secondary.compact {
+  font-size: .75em;
+  padding: .375em .8125em .375em;
+}
+
+.btn.secondary.touch-screen {
+  padding: 1.125em 2.25em;
+}
+
+.btn.secondary.long-label {
+  padding: .3125em 1.125em;
+}
+
+.btn.btn:focus {
+  outline: none;
+  text-decoration: none;
+}
