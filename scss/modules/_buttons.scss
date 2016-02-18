@@ -1,0 +1,109 @@
+// Just a couple points i want to touch on. I normally never leave commented-out code in
+// when pushing changes--I just left them in so you could see what i did with colors. I did use some of
+// them from the palate to show you that i do in fact know how to import but i just used color software to
+// match mockup for most of them- even though it said to not worry. After using sass's lighten and
+//darkening it still didnt look great and it was bothering me.
+//  As for the not adding classes to do the touch-screen i recall David
+// saying he had his version of modernizr-- and most have a way to detect if it something is a touch-screen-
+// and styles could be added if it was on touch-screen. JavaScript is also a possibillity.
+
+
+.btn {
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  padding: .5625em 2.25em .4375em;
+  border: .125em solid transparent;
+  margin: 0 auto;
+  outline-color: transparent;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...alas for real browsers */
+  transition:.5s;
+
+/* all primary state buttons*/
+  &.primary {
+    // background-color: #297cfe; <--actual color from mockup
+    color: white;
+    background-color: $blue;
+
+    &:disabled {
+       background-color: #c7defe;
+      // background-color: $atmosphere; <--didn't look good even with lightening
+      color: $atmosphere-hover;
+    }
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: $shadow-hover;
+      outline: none;
+    }
+
+    &:active {
+      // background-color: #141f5f;  <--actual color from mockup
+      background-color: $navy;
+      box-shadow: $shadow-active;
+      outline: none;
+    }
+
+    &.compact {
+      font-size: .75em;
+      padding: .375em .8125em .375em;
+    }
+
+    &.touch-screen {
+      padding: 1.125em 2.25em;
+
+    }
+    &.long-label {
+      padding: .3125em 1.125em;
+    }
+  }
+
+/* all secondary state buttons*/
+  &.secondary {
+    background-color: #FFFFFF;
+    border-color: $gray;
+    color: #000;
+
+    &:disabled {
+      background-color: #FFFFFF;
+      color: $gray-lighter;
+    }
+
+    &:hover {
+     box-shadow: $shadow-hover;
+     text-decoration: none;
+     border-color: #FFFFFF;
+   }
+
+   &:active {
+    background-color: #394f5a;
+    box-shadow: $shadow-active;
+    color: #FFFFFF;
+    border-color: #394f5a;
+  }
+
+  &.compact {
+    font-size: .75em;
+    padding: .375em .8125em .375em;
+  }
+
+  &.touch-screen {
+    padding: 1.125em 2.25em;
+  }
+
+  &.long-label {
+    padding: .3125em 1.125em;
+  }
+}
+
+/* all primary state buttons*/
+&.btn:focus {
+  outline: none;
+  text-decoration: none;
+  }
+}
